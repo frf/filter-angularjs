@@ -1,0 +1,17 @@
+<p>This is the partial for view 1.</p>
+
+<input type="search" name="search" ng-model="search">
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>City</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="o in data | filter: search">
+        <td ng-bind="o.city"></td>
+        <td>{{o.email}}</td>
+    </tr>
+    </tbody>
+</table>
