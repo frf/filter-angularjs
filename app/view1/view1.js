@@ -41,7 +41,8 @@ app.controller('View1Ctrl', function($scope) {
         switch (type){
             case 'any':
 
-
+                result = value.city.toLocaleLowerCase().indexOf($scope.search)!=-1 ||
+                         value.email.toLocaleLowerCase().indexOf($scope.search)!=-1;
 
                 break;
             case 'city':
